@@ -1,9 +1,19 @@
+#Data Types in Python
+#Numeric
+#Dictionary (1)
+#Boolean (1)
+#Set (1)
+#Sequence type
+
 print("Hello, world")
 #NUmeric Integer float complex
-#Sequence types String list tuple
+#Sequence types Strings, list, TUple
+
 #Chracters single double and triple\\
 s="HELLO"
 #List Ordered mutable collection of items (different types)
+#Ordered
+#Mutable which mean you can change add or remove after is created
 l=[1,2.5,"apple"]
 #tuple Ordered umutable collection of items(the same)
 t=(1,2,3)
