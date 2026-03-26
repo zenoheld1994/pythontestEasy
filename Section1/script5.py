@@ -5,6 +5,9 @@
 # TUples use ()
 #  useful for configurations like:
 db_config = ("localhost",5432,"admin","password")
+#print(len(db_config))
+for item in db_config:
+    print(item)
 # my_tuple=(1,2,3,4,5,6,7)
 #print("my tuple:",my_tuple)
 #Error
