@@ -20,6 +20,12 @@
 import re 
 text = "hello world"
 pattern = r"world"
-result = re.match(pattern,text)
-result = re.search()
-print(result)
+#Only will find it, if it is at the beginning of the string try with world
+# result = re.match(pattern,text)
+# re.search will find the pattern across the whole string
+#group returns the pattern found
+# result = re.search(pattern,text)
+# if result:
+#     print(result.group())
+# re.findall() will find all matches in the string, so it is useful for log files like for a particular message
+
