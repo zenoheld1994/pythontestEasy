@@ -21,7 +21,8 @@ import re
 text = "hello world"
 pattern = r"world"
 #Only will find it, if it is at the beginning of the string try with world
-# result = re.match(pattern,text)
+result = re.search(pattern,text)
+print(result.group())
 # re.search will find the pattern across the whole string
 #group returns the pattern found
 # result = re.search(pattern,text)
