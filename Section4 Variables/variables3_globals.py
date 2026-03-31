@@ -55,3 +55,6 @@ for key in student:
 #different way
 for key,value in student.items(): #items
     print(f"{key}:{value}")
+#also possibe
+for key, value in student.items():
+    print(key, ":", value)
