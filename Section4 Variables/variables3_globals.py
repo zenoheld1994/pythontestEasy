@@ -27,3 +27,15 @@ def substraction():
 substraction()
 
 
+global_var= 32 #myage
+
+def print_global_variables():
+   print(global_var)
+
+def modify_global_variable():
+    global global_var
+    global_var = 33
+    print(global_var)
+
+modify_global_variable()
+print_global_variables()
