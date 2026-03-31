@@ -39,3 +39,19 @@ def modify_global_variable():
 
 modify_global_variable()
 print_global_variables()
+
+student = {
+    "name":"Benek",
+    "last_name":"Don",
+    "age":90,
+    "height":171.5,
+    "pro":True
+}
+student["GPA"]=80
+student["age"]=9
+# print("GPA is",student["GPA"],"age is:",student["age"])
+for key in student:
+    print(key+":",student[key])
+#different way
+for key,value in student.items(): #items
+    print(f"{key}:{value}")

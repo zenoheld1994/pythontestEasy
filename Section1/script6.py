@@ -23,3 +23,17 @@ print("todo:",my_dict)
 my_dict.pop('ae',None)
 # del my_dict['age']
 print("todo:",my_dict)
+
+#Extra very important
+student = {
+    "name":"Benek",
+    "last_name":"Don",
+    "age":90,
+    "height":171.5,
+    "pro":True
+}
+student["GPA"]=80
+student["age"]=9
+# print("GPA is",student["GPA"],"age is:",student["age"])
+for key,value in student.items(): #items
+    print(f"{key}:{value}")
