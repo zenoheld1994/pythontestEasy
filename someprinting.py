@@ -1,18 +1,25 @@
-import random
-import datetime
-import re
+ 
+class Solution:
+    def twoSum(self, nums: list[int], target: int)->list[int]:
+        seen = set()
+        solve = []
 
-# randomfloat = random.random()
-# randominteger = random.randint(20,100)
-# print(randomfloat,randominteger)
+        
 
-# print(datetime.now().strftime("%d/%m/%Y, %H:%S"))
+        for index,number in enumerate(nums):
+            complement = target - number
+            if complement in seen:
+                solve.append(nums.index(complement))
+                solve.append(index)
+            seen.add(number)
 
-text = "whatever this is"
-pattern = r"this"
-uppertext = text.upper()
-haspattern = False
-subtext = "this" in text
-if(subtext != None):
-    haspattern = True
-print(f"Basic string:{text}, converted to uppercase: {uppertext} and Does it contain the following substring(this)? : {haspattern}")
+
+        return solve 
+ 
+    def __init__(self,targ: int,result: list[int]):
+        listadenums =[3,3]
+        self.targ = targ
+        self.result = self.twoSum(listadenums,targ)
+sol = Solution(6,[1,2])
+print(sol.result)
+
