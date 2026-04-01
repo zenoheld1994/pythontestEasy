@@ -26,3 +26,6 @@ elif operator=='mult':
     print(result)
 else:
     print("type a correct operator add, sub or mult")
+'''    
+    wte
+    #'''
